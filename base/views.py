@@ -60,8 +60,9 @@ def registerPage(request):
             login(request, user)
             return redirect('home')
         else:
-            print(form.errors)
-            messages.error(request, 'An error occured during registration')
+            for field, errors in form.errors.items():
+                for error in errors:
+                    messages.error(request, f"{form.fields[field].label}: {error}")
 
     return render(request, 'base/login_register.html', context)
 
