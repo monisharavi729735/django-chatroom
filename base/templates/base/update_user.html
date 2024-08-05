@@ -48,6 +48,12 @@
                             <button class="btn btn--main" type="submit">Update</button>
                         </div>
                     </form>
+                    {% if user.avatar %}
+                    <form class="form" action="{% url 'remove-avatar' %}" method="POST">
+                        {% csrf_token %}
+                        <button class="btn btn--dark" type="submit">Remove Avatar</button>
+                    </form>
+                    {% endif %}
                 </div>
             </div>
         </div>

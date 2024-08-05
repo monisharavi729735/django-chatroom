@@ -11,7 +11,8 @@ urlpatterns = [
     path('', views.home, name="home"),                              # 'root' url maps to the home view
     path('room/<str:pk>/', views.room, name="room"), 
     path('profile/<str:pk>/', views.userProfile, name="user-profile"), 
-    path('update-user/', views.updateUser, name="update-user"), 
+    path('update-user/', views.updateUser, name="update-user"),
+    path('remove-avatar/', views.remove_avatar, name='remove-avatar'),
 
     path('create-room/', views.createRoom, name="create-room"),
     path('update-room/<str:pk>/', views.updateRoom, name="update-room"),

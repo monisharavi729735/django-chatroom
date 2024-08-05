@@ -10,6 +10,7 @@ from django.db import models
 # Note: this process needs to be done everytime there is any change in the db structure)
 
 from django.contrib.auth.models import AbstractUser
+from django.templatetags.static import static
 
 class User(AbstractUser):
     name = models.CharField(max_length=200, null=True)
@@ -18,6 +19,13 @@ class User(AbstractUser):
     avatar = models.ImageField(null=True, default="avatar.svg")
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
+
+    @property
+    def avatar_url(self):
+        if self.avatar and hasattr(self.avatar, 'url'):
+            return self.avatar.url
+        else:
+            return static('images/avatar.svg')
 
 
 class Topic(models.Model):

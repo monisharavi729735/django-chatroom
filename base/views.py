@@ -182,6 +182,16 @@ def updateUser(request):
 
     return render(request, 'base/update_user.html', {'form': form})
 
+@login_required(login_url='login')
+def remove_avatar(request):
+    user = request.user
+    if request.method == 'POST':
+        user.avatar.delete()  # This will delete the current avatar file
+        user.avatar = None  # Set the avatar field to None
+        user.save()
+        return redirect('update-user')
+    return render(request, 'base/update_user.html', {'form': UserForm(instance=user)})
+
 def topicsPage(request):
     q = request.GET.get('q') if request.GET.get('q') != None else ''
     topics = Topic.objects.filter(name__icontains=q)
