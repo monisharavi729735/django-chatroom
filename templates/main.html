@@ -16,7 +16,9 @@
     {% if messages %}
     <ul class="messages">
         {% for message in messages %}
-        <li>{{ message }}</li>
+        <div class="flash-message {% if message.tags %}{{ message.tags }}{% endif %}">
+          <li>{{ message }}</li>
+        </div>
         {% endfor %}
     </ul>
     {% endif %}
