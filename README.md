@@ -1,7 +1,7 @@
 # Django Chatroom
 
 ## Website
-Visit the live application at: [physiXplore](https://monishar729735.pythonanywhere.com)
+Visit the live application at: [PhysiXplore](https://monishar729735.pythonanywhere.com)
 
 ## Description
 
