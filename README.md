@@ -6,8 +6,8 @@ PhysiXplore is a unique platform that combines the functionalities of Discord an
 
 ## Features
 
-- User authentication and authorization using Django's built-in auth system
-- Real-time chat functionality using Django Channels
+- User authentication and authorization using Django
+- Real-time chat functionality
 - Simple and intuitive user interface
 
 ## Installation
