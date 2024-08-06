@@ -44,8 +44,12 @@ To install and run this project, follow these steps:
 - Explore recent activities and filter content by topics.
 - View the number of topics and the total number of topics, on the main page.
 
-License
-
-This project is released under the MIT License. See the LICENSE file for details.
+## Preview
+![Home Page](https://imgur.com/a/S4Hb9mA)
+![Browse Topics](https://imgur.com/a/Wiv1ulK)
+![Create/Update Room](https://imgur.com/a/V9lAUOC)
+![Room Page](https://imgur.com/a/UxfVH6s)
+![User Profile](https://imgur.com/a/C92vwJA)
+![Update Profile](https://imgur.com/a/yMuTTY8)
 
    
