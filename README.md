@@ -45,11 +45,17 @@ To install and run this project, follow these steps:
 - View the number of topics and the total number of topics, on the main page.
 
 ## Preview
+- Home Page
 ![Home Page](https://i.imgur.com/ZKKoYQ4.png)
+- Browse Topics
 ![Browse Topics](https://i.imgur.com/k2xskaX.png)
+- Create/Update Room
 ![Create/Update Room](https://i.imgur.com/WknImWW.png)
+- Room Page
 ![Room Page](https://i.imgur.com/GbT5aUm.png)
+- User Profile
 ![User Profile](https://i.imgur.com/mYOiw9W.png)
+- Update Profile
 ![Update Profile](https://i.imgur.com/Id4k1TV.png)
 
    
