@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-z7kbrswgmhb0^4fs#$k)1h1v$d44so0!w!84z#bn-lf_^xt6j9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['monishar729735.pythonanywhere.com']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
     'base.apps.BaseConfig',
     'rest_framework',
 
@@ -64,7 +64,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates'),    # django, there's a folder called 'templates' 
+            os.path.join(BASE_DIR, 'templates'),    # django, there's a folder called 'templates'
                                       # in the base directory that we'll be using as templates
         ],
         'APP_DIRS': True,
@@ -144,3 +144,5 @@ MEDIA_ROOT = BASE_DIR / 'static/images'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATIC_ROOT = '/home/monishar729735/django-chatroom/mystatic'
